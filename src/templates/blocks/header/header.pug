@@ -1,2 +1,15 @@
 mixin header()
-  +b.HEADER header
+   +b.HEADER.header
+      +e.container.container
+         +e.row
+            +e.logo 
+               img(src="../../assets/images/logo.png", alt="logo")
+            +e.UL.list
+               +e.LI.item
+                  a(href='#')  About company
+               +e.LI.item
+                  a(href='#')  Services
+               +e.LI.item
+                  a(href='#')  How we work
+               +e.LI.item
+                  a(href='#')  Contact us
