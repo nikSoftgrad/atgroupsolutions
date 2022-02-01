@@ -2,42 +2,40 @@ extends ../layouts/main
 
 block content
 
-   +b.page
-      +e.container.container
-         +e.row
-            +e.images-pc
-                  img(src="../../assets/images/comp.png", alt="pc")
-            +e.UL
-               +e.LI.item-text Web Development
-               +e.LI.item-text Software Development
-               +e.LI.item-text Quality Assurance
-               +e.LI.item-text Web Design
-   +b.about
-      +e.container.container
-         +e.row
-            +e.content
-               +e.title About company
-               +e.text Welcome to <strong>AT Group Systems</strong> software Development Company. Based in Rostov on the Don, the largest education and research center in southern Russia, we offer high quality, timely and cost effective answers for all your software needs. With over 10 years in the offshore market, our team of experienced pros has the needed skills to give your company an edge in the competitive field of software development. Our services offer a cost efficient  alternative to local outsourcing or hiring, both expensive in terms of time and money.  It can also allow your company to make freer use of its own resources for more high value, priority work in key areas of competence. Many firms today have concerns about utilizing offshore IT services due to stories they have heard or bad experiences. Our many years experience in the market, communicating closely withclients can and will eliminate many of the concerns and unpleasant situations typically associated with utilizing offshore providers. Contact us and see what a difference our years experience can make.
-               +e.text Сlients who have benefited from the AT Group Systems approach include:
+   +b.banner.container
+      +e.row
+         +e.images-pc
+               img(src="../../assets/images/comp.png", alt="pc")
+         +e.UL
+            +e.LI.item-text Web Development
+            +e.LI.item-text Software Development
+            +e.LI.item-text Quality Assurance
+            +e.LI.item-text Web Design
+   +b.about.container
+      +e.row
+         +e.content
+            +e.title About company
+            +e.text Welcome to <strong>AT Group Systems</strong> software Development Company. Based in Rostov on the Don, the largest education and research center in southern Russia, we offer high quality, timely and cost effective answers for all your software needs. With over 10 years in the offshore market, our team of experienced pros has the needed skills to give your company an edge in the competitive field of software development. Our services offer a cost efficient  alternative to local outsourcing or hiring, both expensive in terms of time and money.  It can also allow your company to make freer use of its own resources for more high value, priority work in key areas of competence. Many firms today have concerns about utilizing offshore IT services due to stories they have heard or bad experiences. Our many years experience in the market, communicating closely withclients can and will eliminate many of the concerns and unpleasant situations typically associated with utilizing offshore providers. Contact us and see what a difference our years experience can make.
+            +e.text Сlients who have benefited from the AT Group Systems approach include:
+            +e.UL.list
+               +e.LI.item
+                  a(href='#')  Astute Solutions, USA
+               +e.LI.item
+                  a(href='#')  Active Technology Group Inc, USA
+               +e.LI.item
+                  a(href='#')  CMO Compliance, UK
+               +e.LI.item and more...
+         +e.sidebar
+            +e.card
                +e.UL.list
-                  +e.LI.item
-                     a(href='#')  Astute Solutions, USA
-                  +e.LI.item
-                     a(href='#')  Active Technology Group Inc, USA
-                  +e.LI.item
-                     a(href='#')  CMO Compliance, UK
-                  +e.LI.item and more...
-            +e.sidebar
-               +e.card
-                  +e.UL.list
-                     +e.LI.sidebar-item
-                        a(href='#')  .Net Development
-                  +e.sidebar-text CRM, Document Managment Systems, Web applications and Web Services
-               +e.card
                   +e.LI.sidebar-item
-                     a(href='#')  Microsoft Reporting Services
-                  +e.sidebar-text Solid platform for reporting in your application
-               +e.card
-                  +e.LI.sidebar-item
-                     a(href='#')  PHP MySql development
-                  +e.sidebar-text EComerce Platforms, Online Stores, Corparate and personal websites
+                     a(href='#')  .Net Development
+               +e.sidebar-text CRM, Document Managment Systems, Web applications and Web Services
+            +e.card
+               +e.LI.sidebar-item
+                  a(href='#')  Microsoft Reporting Services
+               +e.sidebar-text Solid platform for reporting in your application
+            +e.card
+               +e.LI.sidebar-item
+                  a(href='#')  PHP MySql development
+               +e.sidebar-text EComerce Platforms, Online Stores, Corparate and personal websites
