@@ -1,10 +1,22 @@
 mixin header()
    +b.HEADER.header
-      +e.container.container 
+      +e.container.container
          +e.row
-            +e.logo 
+            +e.logo
                img(src="../../assets/images/logo.png", alt="logo")
-            +e.UL.list 
+            +e.burger-menu
+               +e.SPAN.line
+            +e.menu-nav
+               +e.UL.burger-list
+                  +e.LI.burger-item
+                     a(href='#')  About company
+                  +e.LI.burger-item
+                     a(href='#')  Services
+                  +e.LI.burger-item
+                     a(href='#')  How we work
+                  +e.LI.burger-item
+                     a(href='#')  Contact us
+            +e.UL.list
                +e.LI.item
                   a(href='#')  About company
                +e.LI.item

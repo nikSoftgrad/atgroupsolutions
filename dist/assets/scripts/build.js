@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var fullScreenInfoRow=document.querySelector(".main-content"),fullScreenInfo=document.querySelector(".header__menu-nav"),iconMenu=document.querySelector(".header__line");iconMenu&&iconMenu.addEventListener("click",function(e){document.body.classList.toggle("_lock"),iconMenu.classList.toggle("_active"),fullScreenInfoRow.classList.toggle("_active"),fullScreenInfo.classList.toggle("_active")});
 //# sourceMappingURL=build.js.map
