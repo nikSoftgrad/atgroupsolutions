@@ -8,9 +8,6 @@ body
 .main-content
    @media screen and (max-width: 767px)
 
-ul
-   margin 0
-
       &:after
          content ""
          width 100%
@@ -68,9 +65,6 @@ ul
          text-decoration none
          &:hover
             text-decoration underline
-
-      &:checked
-         background-color #fff
 
    &__line
       width 30px
@@ -203,6 +197,7 @@ ul
 
    &__row
       display flex
+      justify-content space-between
       @media screen and (max-width: 767px)
          flex-direction column
 
@@ -214,9 +209,10 @@ ul
    &__text
       margin-bottom 21px
       color #343434
+      font-family Tahoma,Arial,sans-serif
       line-height 24px
+      font-size 13px
       padding-right 15px
-      flex-basis 831px
 
    &__item
       font 13px Tahoma, Arial, sans-serif
@@ -231,9 +227,11 @@ ul
             text-decoration none
 
    &__card
+      width 290px
       min-width 290px
       @media screen and (max-width: 767px)
          min-width 250px
+         width 100%
 
    &__card-list
       width 100%
@@ -257,6 +255,45 @@ ul
    &__card-text
       color #fff
       font 13px Tahoma, Arial, sans-serif
+
+   &__services-text
+      color #343434
+      font 13px Tahoma, Arial, sans-serif
+      line-height 24px
+      padding-right 15px
+
+      &:nth-child(6)
+         padding-bottom 23px
+
+      &:last-child
+         padding-top 20px
+         @media screen and (max-width: 767px)
+            padding-bottom 40px
+
+   &__text-list
+      color #343434
+      font 13px Tahoma, Arial, sans-serif
+      line-height 24px
+      padding-right 15px
+      padding-bottom 6px
+
+   &__text-item
+      padding-right 15px
+      color #343434
+      font 13px Tahoma, Arial, sans-serif
+      line-height 24px
+
+   &__work-text
+      padding-right 15px
+      color #343434
+      font 13px Tahoma, Arial, sans-serif
+      line-height 24px
+      padding-top 20px
+      padding-bottom 20px
+
+   &__sub-title
+      font 20px "Trebuchet MS", Arial, Helvetica, sans-serif
+      color #BC0000
 
 .footer
 
