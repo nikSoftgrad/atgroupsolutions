@@ -6,7 +6,7 @@ block content
       +e.row
          +e.images-pc
                img(src="../../assets/images/comp.png", alt="pc")
-         +e.UL
+         +e.UL.list
             +e.LI.item-text Web Development
             +e.LI.item-text Software Development
             +e.LI.item-text Quality Assurance
@@ -25,17 +25,16 @@ block content
                +e.LI.item
                   a(href='#')  CMO Compliance, UK
                +e.LI.item and more...
-         +e.sidebar
-            +e.card
-               +e.UL.list
-                  +e.LI.sidebar-item
-                     a(href='#')  .Net Development
-               +e.sidebar-text CRM, Document Managment Systems, Web applications and Web Services
-            +e.card
-               +e.LI.sidebar-item
+         +e.card
+            +e.UL.card-list
+               +e.LI.card-item
+                  a(href='#')  .Net Development
+               +e.card-text CRM, Document Managment Systems, Web applications and Web Services
+            +e.UL.card-list
+               +e.LI.card-item
                   a(href='#')  Microsoft Reporting Services
-               +e.sidebar-text Solid platform for reporting in your application
-            +e.card
-               +e.LI.sidebar-item
+               +e.card-text Solid platform for reporting in your application
+            +e.UL.card-list
+               +e.LI.card-item
                   a(href='#')  PHP MySql development
-               +e.sidebar-text EComerce Platforms, Online Stores, Corparate and personal websites
+               +e.card-text EComerce Platforms, Online Stores, Corparate and personal websites
