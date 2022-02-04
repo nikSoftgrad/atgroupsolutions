@@ -1,46 +1,43 @@
 extends ../layouts/main
 
 block content
-
-   +b.banner.container
-      +e.row
-         +e.images-pc
+   .page
+      +b.banner
+         +e.row.container
+            +e.images-pc
                img(src="../../assets/images/comp.png", alt="pc")
-         +e.UL.list
-            +e.LI.item-text Web Development
-            +e.LI.item-text Software Development
-            +e.LI.item-text Quality Assurance
-            +e.LI.item-text Web Design
-   +b.about.work.container
-      +e.row
-         +e.content
-            +e.title Services available
-            +e.sub-title Software Development Process Overview
-            +e.text-list Our company provides support of entire development cycle:
-            +e.text-item gathering of requirements
-            +e.text-item specification development
-            +e.text-item software development
-            +e.text-item testing
-            +e.text-item deployment
-            +e.text-item training/documentation
-            +e.text-item support
-            +e.work-text In our work we always keep close communication with our customers, including e-mail, IME chat, or voice communication. We provide presentation of our progress on each stage of development, and improve our work basing on customer’s reviews. Ability to keep close and clear communication is important part of the product development success.
-            +e.sub-title Development Services Cost
-            +e.text-list We offer competitive rates in bundle with quality and experience. We negotiate three types of contracts:
-            +e.text-item <em>Fixed-price</em> - for projects with detailed specifications, the fixed buget and timeframe job.
-            +e.text-item <em>Time based</em> - for project and consulting services where immediate work is performed on customer's request
-            +e.text-item <em>Dedicated developer</em> - fixed price per month for a dedicated developer
-            +e.work-text For all projects we provide complete accounting of time and other expenses you need.
-         +e.card
-            +e.UL.card-list
-               +e.LI.card-item
-                  a(href='#')  .Net Development
-               +e.card-text CRM, Document Managment Systems, Web applications and Web Services
-            +e.UL.card-list
-               +e.LI.card-item
-                  a(href='#')  Microsoft Reporting Services
-               +e.card-text Solid platform for reporting in your application
-            +e.UL.card-list
-               +e.LI.card-item
-                  a(href='#')  PHP MySql development
-               +e.card-text EComerce Platforms, Online Stores, Corparate and personal websites
+            +e.UL.list
+               +e.LI.item-text Web Development
+               +e.LI.item-text Software Development
+               +e.LI.item-text Quality Assurance
+               +e.LI.item-text Web Design
+      +b.about.work
+         +e.row.container
+            +e.content
+               +e.title Services available
+               +e.sub-title Software Development Process Overview
+               +e.text-list Our company provides support of entire development cycle:
+               +e.text-item gathering of requirements
+               +e.text-item specification development
+               +e.text-item software development
+               +e.text-item testing
+               +e.text-item deployment
+               +e.text-item training/documentation
+               +e.text-item support
+               +e.work-text In our work we always keep close communication with our customers, including e-mail, IME chat, or voice communication. We provide presentation of our progress on each stage of development, and improve our work basing on customer’s reviews. Ability to keep close and clear communication is important part of the product development success.
+               +e.sub-title Development Services Cost
+               +e.text-list We offer competitive rates in bundle with quality and experience. We negotiate three types of contracts:
+               +e.text-item <em>Fixed-price</em> - for projects with detailed specifications, the fixed buget and timeframe job.
+               +e.text-item <em>Time based</em> - for project and consulting services where immediate work is performed on customer's request
+               +e.text-item <em>Dedicated developer</em> - fixed price per month for a dedicated developer
+               +e.work-text For all projects we provide complete accounting of time and other expenses you need.
+            +e.card-list
+               +e.card
+                  a(href='services.html') .Net Development
+                  +e.card-text CRM, Document Managment Systems, Web applications and Web Services
+               +e.card
+                  a(href='services.html') Microsoft Reporting Services
+                  +e.card-text Solid platform for reporting in your application
+               +e.card
+                  a(href='services.html') PHP MySql development
+                  +e.card-text EComerce Platforms, Online Stores, Corparate and personal websites
