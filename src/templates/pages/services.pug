@@ -1,0 +1,39 @@
+extends ../layouts/main
+
+block content
+   .page
+      +b.banner
+         +e.row.container
+            +e.images-pc
+               img(src="../../assets/images/comp.png", alt="pc")
+            +e.UL.list
+               +e.LI.item-text Web Development
+               +e.LI.item-text Software Development
+               +e.LI.item-text Quality Assurance
+               +e.LI.item-text Web Design
+      +b.about.services
+         +e.row.container
+            +e.content
+               +e.title Services available
+               +e.services-text <strong>AT Group Systems</strong> provides development services and application life circle support in the following area:
+               +e.services-text <strong>Software development.</strong> Requirements analyses, development, management, quality assurance, and code review.
+               +e.services-text <strong>Web design and development.</strong> Design, development, web services, HTML Mark Up.
+               +e.services-text <strong>Quality Assurance.</strong> Automated test scripts, load stress testing, manual testing.
+               +e.services-text <strong>Offshore Development</strong> Center at our office - your remote development center with qualified team of developers working exclusively on your projects. It is optimal way to establish your own software development department <strong>at most effective cost.</strong> You pay only for what you use - IT infrastructure, scalable technology resources, office administration - and no extra expenses.
+               +e.text-list <strong>Available resources:</strong>
+               +e.text-item PHP developers
+               +e.text-item .Net developers
+               +e.text-item HTML/JS developers
+               +e.text-item QA - manual testing, automated testing
+               +e.text-item Project managers
+               +e.services-text Additional resources can be added on request.
+            +e.card-list
+               +e.card
+                  a(href='services.html') .Net Development
+                  +e.card-text CRM, Document Managment Systems, Web applications and Web Services
+               +e.card
+                  a(href='services.html') Microsoft Reporting Services
+                  +e.card-text Solid platform for reporting in your application
+               +e.card
+                  a(href='services.html') PHP MySql development
+                  +e.card-text EComerce Platforms, Online Stores, Corparate and personal websites
