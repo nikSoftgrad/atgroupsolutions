@@ -1,5 +1,6 @@
 .header
-   padding 0 20px
+   margin-left 20px
+   margin-right 20px
 
    &__row
       display flex
@@ -29,8 +30,12 @@
          color #343434
          text-decoration none
          padding 19px 16px
+
          &:hover
             text-decoration underline
+      
+      .active
+         background-color rgb(209, 209, 209)
 
 .burger-btn
 .burger-close
@@ -57,6 +62,9 @@
       &:hover
          opacity 0.7
 
+      .active
+         background-color rgb(209, 209, 209)
+
 .burger-close__line
 .burger-btn
 .burger-list
@@ -67,20 +75,23 @@
    color #202925
    margin 0px 40px 10px 0px
    transition all 0.3s ease
+   width 100%
 
    &:last-child
       margin 0
 
 @media screen and (max-width: 767px)
    .header
-      padding 0 10px
+      margin-right 10px
+      margin-left 10px
 
       &__row
          align-items center
          justify-content space-between
 
       .container
-         padding 15px 0
+         margin-top 15px
+         margin-bottom 15px
 
       .burger-btn
          position relative
