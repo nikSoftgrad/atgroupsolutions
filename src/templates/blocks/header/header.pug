@@ -2,29 +2,29 @@ mixin header()
    +b.HEADER.header
       +e.row.container
          +e.logo
-            img(src="../../assets/images/logo.png", alt="logo")
-         +e.burger-btn
+            img.header__img(src="../../assets/images/logo.png", alt="logo")
+         +b.burger-btn
             +e.SPAN.line
             +e.SPAN.line
-         +e.menu-nav
-            +e.burger-close
+         +b.menu-nav
+            +b.burger-close
                +e.SPAN.line
                +e.SPAN.line
-            +e.UL.burger-list
+            +b.UL.burger-list
                +e.LI.burger-item
-                  a(href='index.html') About company
+                  a.burger-link(href='index.html') About company
                +e.LI.burger-item
-                  a(href='services.html') Services
+                  a.burger-link(href='services.html') Services
                +e.LI.burger-item
-                  a(href='work.html') How we work
+                  a.burger-link(href='work.html') How we work
                +e.LI.burger-item
-                  a(href='contacts.html') Contact us
-         +e.UL.list
+                  a.burger-link(href='contacts.html') Contact us
+         +b.UL.menu-list
             +e.LI.item
-               a(href='index.html') About company
+               a.menu-list__link(href='index.html') About company
             +e.LI.item
-               a(href='services.html') Services
+               a.menu-list__link(href='services.html') Services
             +e.LI.item
-               a(href='work.html') How we work
+               a.menu-list__link(href='work.html') How we work
             +e.LI.item
-               a(href='contacts.html') Contact us
+               a.menu-list__link(href='contacts.html') Contact us

@@ -1,9 +1,9 @@
 // Hamburger
 
 const fullScreenInfoRow = document.querySelector('.main-content');
-const fullScreenInfo = document.querySelector('.header__menu-nav');
-const burgerMenu = document.querySelector('.header__burger-btn');
-const burgerMenuClose = document.querySelector('.header__burger-close');
+const fullScreenInfo = document.querySelector('.menu-nav');
+const burgerMenu = document.querySelector('.burger-btn');
+const burgerMenuClose = document.querySelector('.burger-close');
 if (burgerMenu) {
    burgerMenu.addEventListener("click", function (e) {
       document.body.classList.add('js-lock');

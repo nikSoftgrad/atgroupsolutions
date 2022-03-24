@@ -4,35 +4,38 @@ block content
    .page
       +b.banner
          +e.row.container
-            +e.images-pc
-               img(src="../../assets/images/comp.png", alt="pc")
-            +e.UL.list
-               +e.LI.item-text Web Development
-               +e.LI.item-text Software Development
-               +e.LI.item-text Quality Assurance
-               +e.LI.item-text Web Design
+            +e.content
+               +e.images-pc
+                  img(src="../../assets/images/comp.png", alt="pc")
+               +e.UL.list
+                  +e.LI.item-text Web Development
+                  +e.LI.item-text Software Development
+                  +e.LI.item-text Quality Assurance
+                  +e.LI.item-text Web Design
       +b.about.contacts
          +e.row.container
             +e.content
                +e.title Contacts
-               +e.sub-title Rostov na Donu:
-               +e.text-item Moskovskaya str., 16, office 4
-               +e.text-item Rostov na Donu
-               +e.text-item Russia, 344015
-               +e.text-item Phone: +7 (903) 406 37 60
-               +e.contact-sub-title E-mail:
-               +e.UL.list
-                  +e.LI.item
-                     a(href='mailto:info@atgroupsolutions.com') info@atgroupsolutions.com
-                  +e.LI.item
-                     a(href='mailto:info@atgroupsolutions.com') info@atgroupsolutions.com
-            +e.card-list
-               +e.card
-                  a(href='services.html') .Net Development
-                  +e.card-text CRM, Document Managment Systems, Web applications and Web Services
-               +e.card
-                  a(href='services.html') Microsoft Reporting Services
-                  +e.card-text Solid platform for reporting in your application
-               +e.card
-                  a(href='services.html') PHP MySql development
-                  +e.card-text EComerce Platforms, Online Stores, Corparate and personal websites
+               +b.text-block
+                  +e.sub-title Rostov na Donu:
+                  +e.text Moskovskaya str., 16, office 4
+                  +e.text Rostov na Donu
+                  +e.text Russia, 344015
+                  +e.text Phone: +7 (903) 406 37 60
+               +b.text-block
+                  +e.sub-title E-mail:
+                  +e.UL.list
+                     +e.LI.item
+                        a.text-block__link(href='mailto:info@atgroupsolutions.com') info@atgroupsolutions.com
+                     +e.LI.item
+                        a.text-block__link(href='mailto:info@atgroupsolutions.com') info@atgroupsolutions.com
+            +b.card
+               +e.item
+                  a.card__link(href='services.html') .Net Development
+                  +e.text CRM, Document Managment Systems, Web applications and Web Services
+               +e.item
+                  a.card__link(href='services.html') Microsoft Reporting Services
+                  +e.text Solid platform for reporting in your application
+               +e.item
+                  a.card__link(href='services.html') PHP MySql development
+                  +e.text EComerce Platforms, Online Stores, Corparate and personal websites
